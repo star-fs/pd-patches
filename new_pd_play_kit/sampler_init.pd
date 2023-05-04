@@ -1,0 +1,21 @@
+#N canvas 471 139 943 641 12;
+#X obj 547 530 soundfiler;
+#N canvas 0 0 450 300 (subpatch) 0;
+#X array sf-array1 77971 float 0 black black;
+#X coords 0 1 77970 -1 130 50 1;
+#X restore 637 530 graph;
+#N canvas 0 0 450 300 (subpatch) 0;
+#X array sf-array2 77971 float 0 black black;
+#X coords 0 1 77970 -1 130 50 1;
+#X restore 790 530 graph;
+#X obj 547 450 openpanel;
+#X msg 547 490 read -resize \$1 sf-array1 sf-array2;
+#X floatatom 547 570 5 0 0 0 - - -, f 5;
+#X obj 614 600 print load_file;
+#X obj 550 420 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#000000 #000000;
+#X connect 0 0 5 0;
+#X connect 0 1 6 0;
+#X connect 3 0 4 0;
+#X connect 4 0 0 0;
+#X connect 7 0 3 0;

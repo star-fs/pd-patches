@@ -1,0 +1,16 @@
+#N canvas 0 0 1232 445 12;
+#X obj 101 103 steeldrum~;
+#X obj 639 102 reverbgui~;
+#X obj 325 103 wavefolddist~;
+#X obj 202 102 bobmoog~;
+#X obj 642 193 outlet~;
+#X obj 100 79 inlet;
+#X obj 253 72 inlet;
+#X connect 0 0 3 0;
+#X connect 1 0 4 0;
+#X connect 2 0 1 0;
+#X connect 2 0 1 1;
+#X connect 3 0 2 0;
+#X connect 5 0 0 0;
+#X connect 6 0 3 1;
+#X coords 0 -1 1 1 744 90 1 100 100;

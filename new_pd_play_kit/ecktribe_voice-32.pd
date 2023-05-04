@@ -1,0 +1,32 @@
+#N canvas 141 196 1240 678 12;
+#X obj 1 26 cnv 15 960 306 empty empty empty 20 12 0 14 #38845e #404040
+0;
+#X obj 0 31 aseq-32;
+#X obj 720 430 outlet~;
+#X obj 850 341 outlet;
+#X obj 540 110 s trigger;
+#X obj 130 371 inlet;
+#X obj 190 371 inlet;
+#X obj 690 51 ctimeenv;
+#X obj 250 371 inlet;
+#X obj 652 337 outlet;
+#X obj 2 238 harmoscfm~;
+#X obj 640 31 vsl 45 200 0 1 0 0 empty empty empty 0 -9 0 10 #9e5151
+#000000 #000000 450 1;
+#X obj 750 341 *~;
+#X text 690 31 volume envelope;
+#X obj 205 236 filtered-noise~;
+#X connect 1 0 10 0;
+#X connect 1 0 14 0;
+#X connect 1 1 7 1;
+#X connect 1 2 3 0;
+#X connect 1 4 9 0;
+#X connect 5 0 1 0;
+#X connect 6 0 1 1;
+#X connect 7 0 12 0;
+#X connect 8 0 1 2;
+#X connect 10 0 7 0;
+#X connect 11 0 12 1;
+#X connect 12 0 2 0;
+#X connect 14 0 7 0;
+#X coords 0 -1 1 1 962 311 1 23 4;

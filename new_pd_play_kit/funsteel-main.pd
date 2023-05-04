@@ -1,0 +1,26 @@
+#N canvas 0 64 1600 804 12;
+#X obj 50 34 aseq-32;
+#X obj 49 271 steel-voice~;
+#X obj 284 679 dac~;
+#X obj 733 37 aseq-32;
+#X obj 781 247 *;
+#X obj 811 250 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+#fcfcfc #000000 #000000 0 256;
+#X obj 56 560 plv2~;
+#X obj 50 370 ctimeenv;
+#X obj 208 244 t f b;
+#X obj 549 412 reverbgui~;
+#X connect 0 1 8 0;
+#X connect 1 0 7 0;
+#X connect 3 1 4 0;
+#X connect 4 0 1 1;
+#X connect 5 0 4 1;
+#X connect 6 0 2 0;
+#X connect 6 1 2 1;
+#X connect 7 0 6 0;
+#X connect 7 0 6 1;
+#X connect 7 0 9 0;
+#X connect 8 0 1 0;
+#X connect 8 1 7 1;
+#X connect 9 0 6 0;
+#X connect 9 1 6 1;

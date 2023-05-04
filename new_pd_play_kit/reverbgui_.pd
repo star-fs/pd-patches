@@ -1,0 +1,60 @@
+#N canvas 50 64 1550 811 12;
+#X obj 10 110 inlet~;
+#X obj 230 20 inlet;
+#X obj 280 20 inlet;
+#X obj 330 20 inlet;
+#X obj 380 20 inlet;
+#X obj 430 20 inlet;
+#X obj 170 110 inlet~;
+#X obj 30 320 *~;
+#X obj 60 320 *~;
+#X obj 110 320 *~;
+#X obj 140 320 *~;
+#X obj 180 180 t f f;
+#X obj 30 360 outlet~;
+#X obj 110 360 outlet~;
+#X obj 212 205 * -1;
+#X obj 212 231 + 1;
+#X obj 11 16 cnv 15 199 79 empty empty empty 20 12 0 14 #908080 #404040
+0;
+#X obj 60 20 vsl 20 63 0 100 0 0 empty empty empty 0 -9 0 10 #514d4d
+#e9dddd #000000 5700 1;
+#X obj 90 20 vsl 20 63 0 100 0 0 empty empty empty 0 -9 0 10 #514d4d
+#e9dddd #000000 5600 1;
+#X obj 120 20 vsl 20 63 0 6000 0 0 empty empty empty 0 -9 0 10 #514d4d
+#e9dddd #000000 6200 1;
+#X obj 150 20 vsl 20 63 0 100 0 0 empty empty empty 0 -9 0 10 #514d4d
+#e9dddd #000000 5600 1;
+#X obj 180 20 vsl 20 63 0 1 0 0 empty empty empty 0 -9 0 10 #514d4d
+#e9dddd #000000 3450 1;
+#X text 12 42 reverb;
+#X obj 50 180 reverb3~ 1;
+#X connect 0 0 7 0;
+#X connect 0 0 23 0;
+#X connect 1 0 17 0;
+#X connect 2 0 18 0;
+#X connect 3 0 19 0;
+#X connect 4 0 20 0;
+#X connect 5 0 21 0;
+#X connect 6 0 9 0;
+#X connect 6 0 23 1;
+#X connect 7 0 12 0;
+#X connect 8 0 12 0;
+#X connect 9 0 13 0;
+#X connect 10 0 13 0;
+#X connect 11 0 10 1;
+#X connect 11 0 8 1;
+#X connect 11 1 14 0;
+#X connect 14 0 15 0;
+#X connect 15 0 9 1;
+#X connect 15 0 7 1;
+#X connect 17 0 23 2;
+#X connect 18 0 23 3;
+#X connect 19 0 23 4;
+#X connect 20 0 23 5;
+#X connect 21 0 11 0;
+#X connect 23 0 8 0;
+#X connect 23 1 10 0;
+#X connect 23 2 8 0;
+#X connect 23 3 10 0;
+#X coords 0 -1 1 1 200 80 1 11 15;

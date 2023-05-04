@@ -1,0 +1,38 @@
+#N canvas 223 72 1162 781 12;
+#X obj 40 445 reverbgui~;
+#X obj 40 248 wavefolddist~;
+#X obj 40 333 ctimeenv;
+#X obj 40 56 aseq;
+#X obj 410 -2 aseq-b;
+#X obj 410 445 reverbgui~;
+#X obj 410 249 wavefolddist~;
+#X obj 410 334 ctimeenv;
+#X obj 40 420 pan~;
+#X obj 81 421 hsl 128 20 45 -45 0 0 empty empty empty -2 -8 0 10 #fcfcfc
+#000000 #000000 5300 1;
+#X obj 410 420 pan~;
+#X obj 450 421 hsl 128 20 45 -45 0 0 empty empty empty -2 -8 0 10 #fcfcfc
+#000000 #000000 2900 1;
+#X obj 410 121 16harmonics~ them;
+#X obj 40 120 16harmonics~;
+#X obj 40 550 mixer~;
+#X connect 0 0 14 0;
+#X connect 0 1 14 1;
+#X connect 1 0 2 0;
+#X connect 2 0 8 0;
+#X connect 3 0 13 0;
+#X connect 3 1 2 1;
+#X connect 4 0 12 0;
+#X connect 4 1 7 1;
+#X connect 5 0 14 2;
+#X connect 5 1 14 3;
+#X connect 6 0 7 0;
+#X connect 7 0 10 0;
+#X connect 8 0 0 0;
+#X connect 8 1 0 1;
+#X connect 9 0 8 1;
+#X connect 10 0 5 0;
+#X connect 10 1 5 1;
+#X connect 11 0 10 1;
+#X connect 12 0 6 0;
+#X connect 13 0 1 0;

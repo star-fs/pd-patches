@@ -1,0 +1,18 @@
+#N canvas -1 26 1600 804 12;
+#X obj 666 11 16harmonics~;
+#X obj 16 365 aseq;
+#X obj 13 10 aseq-32;
+#X obj 15 231 aseq-b;
+#X obj 725 141 bobmoog~;
+#X obj 853 145 bpm_delay;
+#X obj 728 235 ctimeenv;
+#X obj 733 331 filtered-noise~;
+#X obj 1016 236 harmoscfm~;
+#X obj 1061 339 impulse~;
+#X obj 1144 20 mixer~;
+#X obj 1047 387 reverbgui~;
+#X obj 1250 244 scope~;
+#X obj 16 439 steeldrum-32;
+#X obj 939 443 steeldrum~;
+#X obj 937 536 wavefolddist~;
+#X obj 72 705 steel-voice~;

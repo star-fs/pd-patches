@@ -1,0 +1,80 @@
+#N canvas 399 212 931 640 12;
+#X obj 198 100 cnv 15 100 60 empty empty empty 20 12 0 14 #e0e0e0 #404040
+0;
+#X obj 280 258 metro;
+#X obj 333 261 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+#fcfcfc #000000 #000000 1 256 0;
+#X obj 180 140 tgl 15 0 empty empty Rnd -2 6 0 10 #fcfcfc #000000 #000000
+0 1;
+#X obj 280 288 f;
+#X obj 314 288 + 1;
+#X obj 374 146 loadbang;
+#X obj 374 169 1;
+#X obj 471 147 print;
+#X obj 556 272 f;
+#X obj 590 272 + 1;
+#X obj 222 397 tabwrite \$0-seq_loop;
+#X obj 278 320 t f b f;
+#X obj 554 342 tabread \$0-seq_loop;
+#X obj 319 145 t b f;
+#X msg 319 170 0;
+#X obj 556 297 t f f;
+#X obj 453 187 select 16;
+#X obj 190 211 select 16;
+#X obj 222 364 random 64;
+#X msg 188 239 0;
+#X msg 452 216 0;
+#X obj 560 220 metro;
+#X obj 143 120 nbx 5 14 -1e+37 1e+37 0 0 empty empty ms/beat -43 6
+0 10 #fcfcfc #000000 #000000 257 256 0;
+#X obj 160 102 tgl 15 0 empty empty ply -20 6 0 10 #fcfcfc #000000
+#000000 1 1;
+#X obj 180 102 bng 15 50 10 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000;
+#X obj 450 480 outlet;
+#N canvas 600 338 450 325 (subpatch) 0;
+#X array \$0-seq_loop 17 float 23 #546aa1 black;
+#A 0 46 23 3 20 17 48 20 19 26 38 30 36 41 17 26 62 29;
+#X coords 0 64 17 0 100 54 1;
+#X restore 198 103 graph;
+#X obj 124 142 nbx 5 14 -1e+37 1e+37 0 0 empty empty low# -23 5 0 10
+#fcfcfc #000000 #000000 23 256 0;
+#X obj 447 387 +;
+#X obj 450 440 mtof;
+#X obj 260 470 sig~;
+#X obj 260 520 outlet~;
+#X connect 1 0 4 0;
+#X connect 2 0 1 1;
+#X connect 3 0 1 0;
+#X connect 4 0 5 0;
+#X connect 4 0 12 0;
+#X connect 5 0 4 1;
+#X connect 6 0 7 0;
+#X connect 7 0 2 0;
+#X connect 9 0 10 0;
+#X connect 9 0 16 0;
+#X connect 10 0 9 1;
+#X connect 12 0 18 0;
+#X connect 12 1 19 0;
+#X connect 12 2 11 1;
+#X connect 13 0 25 0;
+#X connect 13 0 29 0;
+#X connect 14 0 15 0;
+#X connect 14 1 4 0;
+#X connect 15 0 3 0;
+#X connect 16 0 17 0;
+#X connect 16 1 13 0;
+#X connect 17 0 21 0;
+#X connect 18 0 20 0;
+#X connect 19 0 11 0;
+#X connect 20 0 14 0;
+#X connect 21 0 9 0;
+#X connect 22 0 9 0;
+#X connect 23 0 22 1;
+#X connect 24 0 22 0;
+#X connect 28 0 29 1;
+#X connect 29 0 30 0;
+#X connect 30 0 26 0;
+#X connect 30 0 31 0;
+#X connect 31 0 32 0;
+#X coords 0 -1 1 1 200 60 1 100 100;

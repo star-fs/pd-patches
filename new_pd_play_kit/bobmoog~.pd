@@ -1,0 +1,35 @@
+#N canvas 600 356 450 300 12;
+#X obj 110 230 bob~;
+#X obj 246 149 / 25;
+#X obj 160 180 line~;
+#X obj 245 177 line~;
+#X obj 40 110 inlet~;
+#X obj 110 260 outlet~;
+#X obj 190 20 inlet;
+#X obj 250 20 inlet;
+#X obj 18 17 cnv 15 118 79 empty empty empty 20 12 0 14 #5b9038 #404040
+0;
+#X text 21 41 bobmoog;
+#X obj 81 28 vsl 20 63 0 6000 0 0 empty empty c/o -2 -7 0 10 #514d4d
+#e9dddd #000000 0 1;
+#X obj 111 28 vsl 20 63 0 101 0 0 empty empty rez -2 -7 0 10 #3c2626
+#bba8a8 #000000 0 1;
+#X obj 340 130 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+#fcfcfc #000000 #000000 0 256;
+#X obj 160 155 pack 0 20;
+#X obj 297 67 loadbang;
+#X obj 299 103 1;
+#X connect 0 0 5 0;
+#X connect 1 0 3 0;
+#X connect 2 0 0 1;
+#X connect 3 0 0 2;
+#X connect 4 0 0 0;
+#X connect 6 0 10 0;
+#X connect 7 0 11 0;
+#X connect 10 0 13 0;
+#X connect 11 0 1 0;
+#X connect 13 0 2 0;
+#X connect 14 0 15 0;
+#X connect 15 0 10 0;
+#X connect 15 0 11 0;
+#X coords 0 -1 1 1 122 83 1 16 15;
